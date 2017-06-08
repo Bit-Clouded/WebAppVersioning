@@ -1,0 +1,37 @@
+/src/packages/*
+obj
+bin
+*.suo
+*.user
+
+# WinMerge backup files
+*.orig 
+
+**/App_Data/*
+# access.config holds content protection configuration
+!**/App_Data/access.config
+
+# Exclude build artifacts and output
+
+/src/CiOutput
+/src/CiArtefact
+
+# CiWebDeploy contains a mix of build-generated files and environment
+# parameters. Only the environment parameters should be comitted
+
+**/CiWebDeploy/*
+!**/CiWebDeploy/Site.SetParameters.Dev.xml
+!**/CiWebDeploy/Site.SetParameters.Prod.xml
+!**/CiWebDeploy/Site.SetParameters.Staging.xml
+!**/CiWebDeploy/Site.SetParameters.Tests.xml
+!**/CiWebDeploy/Site.SetParameters.Uat.xml
+
+# Automatically created. During Umbraco package install I think
+web.config.*.backup
+
+.DS_Store
+*.swp
+*.lock
+*sublime*
+
+CompiledIndexCache
